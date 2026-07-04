@@ -1,0 +1,18 @@
+const Header = () => {
+  return(
+    <div className='flex items-center justify-between h-20 px-16 shadow-md bg-white'>
+      <div className='logo-container flex items-center gap-8'>
+        <img className='w-12 h-12 cursor-pointer'  src="https://img.magnific.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
+      </div>
+      <div className=''>
+        <ul className='flex items-center gap-12 text-lg font-medium '>
+          <li className='cursor-pointer hover:text-orange-500'>Home</li>
+          <li className='cursor-pointer hover:text-orange-500'>About Us</li>
+          <li className='cursor-pointer hover:text-orange-500'>Contact Us</li>
+          <li className='cursor-pointer hover:text-orange-500'>Cart</li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+export default Header;

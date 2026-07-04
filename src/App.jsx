@@ -1,62 +1,34 @@
 import React from 'react'
+import Header from './components/Header';
+import Body from './components/Body';
 
 const App = () => {
   return(
     <div>
       <Header/>
       <Body/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-      <Restraunt/>
-
-    </div>
-  )
-}
-
-const Header = () => {
-  return(
-    <div className='border-b border-amber-400 bg-pink-400 flex justify-between px-8 py-4'>
-      <div className='logo-container'>
-        <img className='w-23' src="https://img.magnific.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
-      </div>
-      <div className=''>
-        <ul className='flex gap-6 px-8 py-4'>
-          <li className='text-lg font-medium'>Home</li>
-          <li className='text-lg font-medium'>About Us</li>
-          <li className='text-lg font-medium'>Contact Us</li>
-          <li className='text-lg font-medium'>Cart</li>
-        </ul>
-      </div>
-    </div>
-  )
-}
-
-
-const Body = () => {
-  return(
-    <div>
-      <div>search</div>
-      <div className='restraunt-card'>
-        
-      </div>
-    </div>
-  )
-}
-
-const Restraunt = () =>{
-  return(
-    <div className='res-card w-48 h-48 bg-amber-600'>
+      <div className='flex flex-wrap gap-4'>
+      <Restraunt resName = "Meghna Foods" cuisine = "Biryani, North Indian, Asian"/>
+      <Restraunt resName = "KFC" cuisine = "Burger, Fast Food"/>
       
-      <img src="" alt="" />
-      <h3 className=''>Meghna Foods</h3>
-      <h4>Biryani, North Indian, Asian</h4>
+      </div>
+    
+
+    </div>
+  )
+}
+
+
+
+
+
+const Restraunt = (props) =>{
+  return(
+    <div className='res-card w-48  bg-amber-600 '>
+      
+      <img src="https://png.pngtree.com/thumb_back/fh260/background/20241007/pngtree-chicken-biryani-with-onions-herbs-image_16340511.jpg" alt="" />
+      <h3 className=''>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h4>4.4 stars</h4>
       <h4>38 minutes</h4>
 
