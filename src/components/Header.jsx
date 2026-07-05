@@ -1,8 +1,10 @@
+import { LOGO_URL } from "../utils/constants";
+
 const Header = () => {
   return(
     <div className='flex items-center justify-between h-20 px-16 shadow-md bg-white'>
       <div className='logo-container flex items-center gap-8'>
-        <img className='w-12 h-12 cursor-pointer'  src="https://img.magnific.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80" alt="" />
+        <img className='w-12 h-12 cursor-pointer'  src={LOGO_URL} alt="" />
       </div>
       <div className=''>
         <ul className='flex items-center gap-12 text-lg font-medium '>
