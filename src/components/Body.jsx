@@ -10,17 +10,17 @@ const Body = () => {
     const [filteredRestautant, setFilteredRestaurant] = useState(resList);
     const [searchText, setSerchText] = useState();
 
-  //  useEffect(() => {
-  //   fetchData();
-  //  },[]);
+   useEffect(() => {
+    fetchData();
+   },[]);
 
-  //  const fetchData = async () => {
-  //   const data = await fetch();
+   const fetchData = async () => {
+    const data = await fetch();
 
-  //   const json = await data.json();
-  //   //optional chaning
-  //   setlistofRes(json?.data);
-  //  }
+    const json = await data.json();
+    //optional chaning
+    setlistofRes(json?.data);
+   }
 
   // if (listofRes === 0) {
   //   return <Shimmer/>
